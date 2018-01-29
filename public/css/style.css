@@ -6,3 +6,6 @@
 
 /*Import signup styles here*/
 @import 'signup.css';
+
+/*Import forgot password styles here*/
+@import 'forgot-password.css';
