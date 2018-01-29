@@ -3,3 +3,6 @@
 
 /*Import login styles here*/
 @import 'login.css';
+
+/*Import signup styles here*/
+@import 'signup.css';

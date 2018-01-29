@@ -709,8 +709,8 @@ Background colors*/
     color: #959595 !important;
     border: 2px solid #f4f4f4;
     background-color: #f7f7f7 !important;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
 }
 .btn-custom-white{
     border: 2px solid #dedede !important;
