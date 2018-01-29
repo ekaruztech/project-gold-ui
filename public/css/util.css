@@ -713,6 +713,7 @@ Background colors*/
     padding-bottom: 10px !important;
 }
 .btn-custom-white{
+    color: #000 !important;
     border: 2px solid #dedede !important;
     background-color: #fff !important;
     padding: 9px !important;
