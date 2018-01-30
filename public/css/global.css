@@ -1,6 +1,7 @@
 @import 'util.css';
 @import '../lib/bootstrap/dist/css/bootstrap.min.css';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import '../lib/font-awesome/css/font-awesome.min.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet');
 body{
     font-family: 'Open Sans', sans-serif;
     /*padding-top: 50px;*/
@@ -18,6 +19,9 @@ body{
     .logo-alt{margin-left: 5px; display: inline; }
     .auth-banner{display: none; !important;}
     .auth-form-wrapper{margin-top: 90px !important;}
+    .nav-right a{
+        display: inline-block;
+    }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 @media (min-width: 768px) {

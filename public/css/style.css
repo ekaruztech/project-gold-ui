@@ -9,3 +9,6 @@
 
 /*Import forgot password styles here*/
 @import 'forgot-password.css';
+
+/*Import index styles here*/
+@import 'index.css';
