@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/global.css" media="screen">
+    <link rel="stylesheet" href="css/transfer.css" media="screen">
+    <link rel="stylesheet" href="lib/bootstrap-select/dist/css/bootstrap-select.min.css" media="screen">
+    <title>Transactions</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-white shadow-lite fixed-top navbar-custom2">
+    <a class="navbar-brand" href="#">
+        <img src="images/coiner-logo.png" class="logo-main">
+    </a>
+    <button class="navbar-toggler text-black" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+        <ul class="navbar-nav mr-20">
+            <li class="nav-item active">
+                <a class="nav-link nav-anchor" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-anchor" href="#">Buy/Sell</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-anchor" href="#">Charts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-anchor" href="#">Dashboard</a>
+            </li>
+        </ul>
+        <div class="navbar-nav nav-right authenticated-nav-right">
+            <img src="images/pp.png" class="circle circle-xs pp-border">
+        </div>
+
+    </div>
+</nav>
+
+<div class="col-md-10 mx-auto authenticated-user-area shadow-lite mt-50">
+    <div class="row row-offcanvas full-height">
+        <div class="col-md-3 sidebar sidebar-offcanvas shadow-lite authenticated-sidebar">
+            <div class="user-avatar-area center-content">
+                <div>
+                    <img src="images/pp.png" class="circle circle-sm pp-border">
+                    <h6 class="text-sm mt-10 user-name">Benjamin Ikeji</h6>
+                    <h6 class="text-sm text-muted view-profile">VIEW PROFILE</h6>
+                </div>
+            </div>
+            <hr class="m-0">
+            <div class="user-links-area">
+                <p class="d-block d-sm-none">
+                    <button type="button" class="btn btn-outline-secondary btn-xs text-sm m-1" data-toggle="offcanvas"><i class="fa fa-times text-danger"></i> Close</button>
+                </p>
+                <ul class="mt-15">
+                    <li><a class="text-muted" href="dashboard.html">DASHBOARD</a></li>
+                    <li><a class="text-muted" href="transactions.html">TRANSACTIONS</a></li>
+                    <li><a class="text-muted" href="transfer.html">TRANSFER</a></li>
+                    <li><a class="text-muted" href="wallet.html">WALLET</a></li>
+                    <li><a class="text-muted" href="settings.html">SETTINGS</a></li>
+                    <li><a class="text-muted" href="#">LOGOUT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9 p-0 content shadow-lite">
+            <p class="mt-10 d-block d-sm-none">
+                <button type="button" class="btn btn-outline-secondary btn-sm m-1" data-toggle="offcanvas">
+                    Menu
+                </button>
+            </p>
+            <header class="first-inner-header p-15 pr-25 shadow-lite  d-flex justify-content-around">
+                <span><strong>Transfer</strong></span>
+                <span class="text-sm text-muted ml-auto">Home - Transfer</span>
+            </header>
+            <header class="second-inner-header p-15 pl-25 shadow-lite">
+                <span class="text-sm text-uppercase ml-auto">
+                    <small>
+                        <a href="#" class="text-muted">SEND</a>
+                        |
+                        <a class="text-black" href="#">RECEIVE</a>
+                        |
+                        <a class="text-black" href="#">TRANSFER</a>
+                    </small>
+                </span>
+            </header>
+            <div class="container-fluid content-area shadow-lite">
+                <div class="row m-0 mt-30">
+                    <div class="col-md-5 col-sm-12 col-12">
+                        <h5 class="text-md text-muted"><strong>Receive</strong></h5>
+                        <h5 class="text-md text-muted"><strong>Cryptocurrencies</strong></h5>
+                        <div class="barcode shadow-lite mt-30 mb-20">
+                            <img src="images/barcode.png" class="full-height full-width">
+                        </div>
+                        <div class="mb-0 tex-md break-word">
+                            1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX
+                        </div>
+                        <a class="text-muted text-sm" href="#">Generate new address</a>
+                    </div>
+                    <div class="col-md-7">
+                        <form class="align-self-center mt-70 auth-form col-md-10">
+                            <div class="form-group">
+                                <label class="text-uppercase text-sm">Select Currency</label>
+                                <select class="form-control shadow-lite selectpicker br-0 bg-white text-md">
+                                    <option>BITCOIN</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1" class="text-sm">
+                                    <span class="text-uppercase">Available Balance</span>
+                                </label>
+                                <div class="bg-white p-10 shadow-lite">1 BTC</div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/popper.js/dist/umd/popper.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.selectpicker').selectpicker({
+            size: 4
+        });
+        $('[data-toggle=offcanvas]').click(function () {
+            $('.row-offcanvas .sidebar-offcanvas').toggleClass('active');
+        });
+        $('.row-offcanvas > .sidebar-offcanvas > ul  a').click(function () {
+            $('.row-offcanvas .sidebar-offcanvas').toggleClass('active');
+        });
+    });
+</script>
+</body>
+</html>
