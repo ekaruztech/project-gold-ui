@@ -12,3 +12,6 @@
 
 /*Import index styles here*/
 @import 'index.css';
+
+/*Import transactions styles here*/
+@import 'transactions.css';

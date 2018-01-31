@@ -292,6 +292,10 @@ a{
     padding-left: 30px !important;
 }
 
+.pl-25 {
+    padding-left: 25px !important;
+}
+
 .pl-20 {
     padding-left: 20px !important;
 }
@@ -310,6 +314,10 @@ a{
 
 .pr-30 {
     padding-right: 30px !important;
+}
+
+.pr-25 {
+    padding-right: 25px !important;
 }
 
 .pr-20 {
@@ -691,8 +699,9 @@ Background colors*/
 .dark-well{background-color: #F5F5F5 !important;} .light-well{background-color: #f7f7f7 !important;}
 .lighter-well{background-color: #f7f7f7 !important;}
 .center{margin: 0 auto}
-.circle{border-radius: 50%; transform: translateX(-50%) translateY(-50%);}
-.circle-xs{height: 60px; width: 60px;}
+.circle{border-radius: 50%;}
+.circle-xs{height: 50px; width: 50px;}
+.circle-sm{height: 70px; width: 70px;}
 .absolute-position{position: absolute !important;}
 .relative-position{position: relative !important;}
 
