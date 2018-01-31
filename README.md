@@ -16,3 +16,4 @@ UI to HTML design conversion for project gold
 * localhost:4000/transfer.html
 * localhost:4000/transfer-2.html
 * localhost:4000/transfer-3.html
+* localhost:4000/wallet.html

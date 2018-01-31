@@ -1,0 +1,231 @@
+body {
+    padding-top: 60px;
+}
+.navbar > .navbar-collapse > .navbar-nav > li > a, .navbar > .navbar-nav * {
+    color: #333 !important;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.navbar > .navbar-collapse > .navbar-nav > li.active > a,
+.navbar > .navbar-collapse > .nav-right a.active {
+    font-weight: 900 !important;
+    color: #000 !important;
+}
+
+.navbar-toggler {
+    background-color: #F7F7F9;
+    color: #000 !important;
+    box-shadow: 0 0 1px #000;
+}
+
+.authenticated-nav-right {
+    margin-right: 150px;
+}
+
+.pp-border {
+    border: 5px double rgba(255, 255, 255, 1);
+}
+
+.authenticated-user-area {
+    height: 84vh;
+    min-height: 84vh;
+}
+
+.authenticated-user-area .authenticated-sidebar {
+    height: 100%;
+    min-height: 100%;
+    padding: 0;
+}
+
+.user-avatar-area {
+    height: 45%;
+    background-image: linear-gradient(to bottom, #ffffff, #fdfdfd, #fbfcfb, #fafafa, #f8f8f8);
+    background-color: #F8F8F8;
+    margin: 0;
+}
+.user-name{
+    font-weight: 600;
+    color: #333;
+}
+.user-avatar-area > div > .view-profile {
+    font-size: 10px !important;
+    text-align: center;
+}
+
+.user-links-area {
+    background-color: #fff;
+}
+
+.user-links-area ul {
+    list-style: none;
+    font-size: 12px;
+}
+
+.user-links-area > ul > li {
+    border-bottom: 1px solid #F0F0F0;
+    padding: 15px;
+    padding-left: 0;
+    display: block;
+}
+.user-links-area > ul > li.active, .user-links-area > ul > li:hover{
+    display: block;
+    background-color: #F8F8F8;
+    color: #000;
+}
+.user-links-area > ul > li:last-of-type {
+    border-bottom: none;
+}
+.second-inner-header {
+    background-color: #F7F7F7;
+}
+
+.content-area {
+    overflow-y: scroll;
+    background-color: #F7F7F7;
+    padding: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 76vh;
+    max-height: 76vh;
+}
+
+.content-area .content-table {
+    border-collapse: separate;
+    border-spacing: 0 0.5em;
+}
+
+.content-table > thead > tr,
+.content-table > tbody > tr {
+    background-color: #fff;
+    padding: 0;
+    box-shadow: 0 0 1px #999;
+}
+
+.content-table > thead > tr > th,
+.content-table > tbody > tr > td {
+    font-size: 9px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.content-table > tbody > tr > td > span {
+    font-size: 10px;
+    padding: 7px 18px;
+}
+
+.content-table > tbody > tr > td > button {
+    font-size: 10px;
+    padding: 3px 12px;
+}
+
+.sidebar{
+    z-index: 400;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+}
+.balance-info{
+    position: relative;
+    height: 180px;
+    width: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.balance-info-btn{
+    border-radius: 22px !important;
+    position: absolute;
+    bottom: -15px;
+}
+.balance-info-wrapper{
+    height: 45%;
+    margin: 2.5% auto;
+}
+.balance-info-wrapper-1, .balance-info-wrapper-3 {
+    height: 40%;
+}
+.balance-info-wrapper-2{
+    height: 10%;
+}
+.wallet-inner-nav{
+    list-style: none;
+}
+.wallet-inner-nav > li{
+    border-bottom: 2px solid #F0F0F0;
+    padding: 12px;
+    display: block;
+    font-size: 10px;
+}
+
+
+
+/*
+media query for sidebar*/
+@media screen and (max-width: 768px) {
+    .sidebar{
+        background-color: #fff;
+    }
+    .row-offcanvas {
+        position: relative;
+        z-index: 500;
+    }
+
+    .sidebar-offcanvas.active {
+        display: block;
+        border-radius: 2px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        z-index: 600;
+        height: auto;
+        background-image: linear-gradient(to bottom, #FFFFFF  0%,  #F8F8F8 80%);
+        background-color: #F8F8F8;
+    }
+
+    .sidebar-offcanvas {
+        position: absolute;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 80%;
+        z-index: 1000;
+        height: 75vh;
+    }
+    .content-area{
+        padding: 5px;
+        overflow-y: scroll;
+    }
+    .balance-info-wrapper{
+        height: auto;
+        margin: 2.5% auto;
+    }
+    .wallet-inner-nav{
+        list-style: none;
+    }
+    @-webkit-keyframes slideIn {
+        0% {
+            transform: translateX(-900px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    @-moz-keyframes slideIn {
+        0% {
+            transform: translateX(-900px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    @keyframes slideIn {
+        0% {
+            transform: translateX(-900px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+}

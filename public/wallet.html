@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/global.css" media="screen">
-    <link rel="stylesheet" href="css/transfer.css" media="screen">
     <link rel="stylesheet" href="lib/bootstrap-select/dist/css/bootstrap-select.min.css" media="screen">
-    <title>Transactions</title>
+    <link rel="stylesheet" href="css/wallet.css" media="screen">
+    <title>Wallet</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-white shadow-lite fixed-top navbar-custom2">
@@ -76,55 +76,53 @@
                     Menu
                 </button>
             </p>
-            <header class="first-inner-header p-15 pr-25 shadow-lite  d-flex justify-content-around">
-                <span><strong>Transfer</strong></span>
-                <span class="text-sm text-muted ml-auto">Home - Transfer</span>
+            <header class="first-inner-header p-15 pr-25 shadow-lite">
+                <span><strong>Wallet</strong></span>
+                <span class="text-sm text-muted ml-auto">Home - Wallet</span>
             </header>
-            <header class="second-inner-header p-15 pl-25 shadow-lite">
-                <span class="text-sm text-uppercase ml-auto">
-                    <small>
-                        <a href="#" class="text-muted">SEND</a>
-                        |
-                        <a class="text-black" href="#"><strong>RECEIVE</strong></a>
-                        |
-                        <a class="text-muted" href="#">TRANSFER</a>
-                    </small>
-                </span>
-            </header>
-            <div class="container-fluid content-area shadow-lite">
-                <form class="mx-auto mt-70 auth-form">
-                    <div class="row m-0 mt-30">
-                        <div class="form-group col-md-6">
-                            <label class="text-uppercase text-sm">Select Currency</label>
-                            <select class="form-control shadow-lite selectpicker br-0 bg-white text-md">
-                                <option>BITCOIN</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="exampleInputPassword1" class="text-sm">
-                                <span class="text-uppercase">Available Balance</span>
-                            </label>
-                            <div class="bg-white form-control simplebox">1 BTC</div>
+            <div class="container-fluid content-area align-content-between">
+                <div class="row balance-info-wrapper p-0">
+                    <div class="col-md-6 center-content p-0">
+                        <div class="balance-info shadow bg-white mx-auto center-content">
+                            <div>
+                                <h2 class="text-center">N7,490,305.00</h2>
+                                <h6 class="text-muted text-center text-sm text-uppercase">Available Balance</h6>
+                            </div>
+                            <button class="btn btn-custom-success text-uppercase text-sm balance-info-btn">Money</button>
                         </div>
                     </div>
-                    <div class="row m-0 mt-10">
-                        <div class="form-group col-md-6">
-                            <label class="text-uppercase text-sm">Recipient</label>
-                            <input type="text" class="form-control" placeholder="Enter bitcoin address">
+                    <div class="col-md-6 p-0">
+                        <ul class="wallet-inner-nav text-uppercase mt-50">
+                            <li><a href="#" class="text-muted">Deposit</a></li>
+                            <li><a href="#" class="text-muted">Withdraw</a></li>
+                            <li><a href="#" class="text-muted">History</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row balance-info-wrapper p-0">
+                    <div class="col-md-6 center-content p-0">
+                        <div class="balance-info shadow bg-white mx-auto center-content">
+                            <div>
+                                <h2 class="text-center text-uppercase">1.5 Btc</h2>
+                                <h6 class="text-muted text-center text-sm text-uppercase">Available Balance</h6>
+                            </div>
+                            <button class="btn btn-custom text-uppercase text-sm balance-info-btn">Money</button>
                         </div>
-                        <div class="form-group col-md-6">
-                            <label class="text-uppercase text-sm">Btc Amount</label>
-                            <input type="text" class="form-control" placeholder="Enter bitcoin amount">
-                        </div>
+                    </div>
 
+                    <div class="col-md-6 p-0">
+                        <ul class="wallet-inner-nav text-uppercase mt-10">
+                            <li>
+                                <select class="form-control selectpicker br-0 shadow-lite">
+                                    <option class="text-md">BITCOIN</option>
+                                </select>
+                            </li>
+                            <li><a href="#" class="text-muted">Deposit</a></li>
+                            <li><a href="#" class="text-muted">Withdraw</a></li>
+                            <li><a href="#" class="text-muted">History</a></li>
+                        </ul>
                     </div>
-                    <div class="row m-0 mt-15">
-                        <div class="form-group col-md-12">
-                            <button type="button" class="simplebox btn btn-custom-success text-uppercase">Submit</button>
-                        </div>
-                    </div>
-                </form>
-
+                </div>
             </div>
         </div>
     </div>
@@ -135,9 +133,7 @@
 <script src="lib/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 <script>
     $(document).ready(function () {
-        $('.selectpicker').selectpicker({
-            size: 4
-        });
+        $('.selectpicker').selectpicker();
         $('[data-toggle=offcanvas]').click(function () {
             $('.row-offcanvas .sidebar-offcanvas').toggleClass('active');
         });
