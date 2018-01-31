@@ -81,44 +81,41 @@
             <header class="second-inner-header p-15 pl-25 shadow-lite">
                 <span class="text-sm text-uppercase ml-auto">
                     <small>
-                        <a href="#" class="text-black"><strong>SEND</strong></a>
+                        <a href="#" class="text-muted">SEND</a>
                         |
                         <a class="text-muted" href="#">RECEIVE</a>
                         |
-                        <a class="text-muted" href="#">TRANSFER</a>
+                        <a class="text-black" href="#"><strong>TRANSFER</strong></a>
                     </small>
                 </span>
             </header>
-            <div class="container-fluid content-area shadow-lite">
-                <div class="row m-0 mt-30">
-                    <div class="col-md-5 col-sm-12 col-12">
-                        <h5 class="text-md text-muted"><strong>Receive</strong></h5>
-                        <h5 class="text-md text-muted"><strong>Cryptocurrencies</strong></h5>
-                        <div class="barcode shadow-lite mt-30 mb-20">
-                            <img src="images/barcode.png" class="full-height full-width">
-                        </div>
-                        <div class="mb-0 tex-md break-word">
-                            1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX
-                        </div>
-                        <a class="text-muted text-sm" href="#">Generate new address</a>
-                    </div>
-                    <div class="col-md-7">
-                        <form class="align-self-center mt-70 auth-form col-md-10">
-                            <div class="form-group">
-                                <label class="text-uppercase text-sm">Select Currency</label>
-                                <select class="form-control shadow-lite selectpicker br-0 bg-white text-md">
-                                    <option>BITCOIN</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1" class="text-sm">
-                                    <span class="text-uppercase">Available Balance</span>
-                                </label>
-                                <div class="bg-white p-10 shadow-lite">1 BTC</div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+            <div class="content-area shadow-lite">
+                <table class="table content-table">
+                    <thead>
+                    <tr>
+                        <th>S/NO</th>
+                        <th>REFERENCE NO</th>
+                        <th>BUY/SELL</th>
+                        <th>CURRENCY</th>
+                        <th>VALUE</th>
+                        <th>USER</th>
+                        <th>STATUS</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>34542343234</td>
+                        <td><span class="badge badge-pill badge-success">Buy</span></td>
+                        <td class="text-success">0.0023344BTC</td>
+                        <td class="text-success">6,345NGN</td>
+                        <td>@easybtc</td>
+                        <td>Released</td>
+                        <td><button class="btn btn-light btn-sm shadow">View</button></td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

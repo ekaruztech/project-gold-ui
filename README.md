@@ -13,4 +13,5 @@ UI to HTML design conversion for project gold
 * localhost:4000/change-password.html
 * localhost:4000/index.html
 * localhost:4000/transactions.html
-* localhost:4000/transfers.html
+* localhost:4000/transfer.html
+* localhost:4000/transfer-2.html
