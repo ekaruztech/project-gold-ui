@@ -56,7 +56,9 @@
             <hr class="m-0">
             <div class="user-links-area">
                 <p class="d-block d-sm-none">
-                    <button type="button" class="btn btn-outline-secondary btn-xs text-sm m-1" data-toggle="offcanvas"><i class="fa fa-times text-danger"></i> Close</button>
+                    <button type="button" class="btn btn-outline-secondary btn-xs text-sm m-1" data-toggle="offcanvas">
+                        <i class="fa fa-times text-danger"></i> Close
+                    </button>
                 </p>
                 <ul class="mt-15">
                     <li><a class="text-muted" href="dashboard.html">DASHBOARD</a></li>
@@ -90,38 +92,43 @@
                 </span>
             </header>
             <div class="container-fluid content-area shadow-lite">
-                <div class="row m-0 mt-30">
-                    <div class="col-md-5 col-sm-12 col-12">
-                        <h5 class="text-md text-muted"><strong>Receive</strong></h5>
-                        <h5 class="text-md text-muted"><strong>Cryptocurrencies</strong></h5>
-                        <div class="barcode shadow-lite mt-30 mb-20">
-                            <img src="images/barcode.png" class="full-height full-width">
+                <form class="mx-auto mt-70 auth-form">
+                    <div class="row m-0 mt-30">
+                        <div class="form-group col-md-6">
+                            <label class="text-uppercase text-sm">Select Currency</label>
+                            <select class="form-control shadow-lite selectpicker br-0 bg-white text-md">
+                                <option>BITCOIN</option>
+                            </select>
                         </div>
-                        <div class="mb-0 tex-md break-word">
-                            1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputPassword1" class="text-sm">
+                                <span class="text-uppercase">Available Balance</span>
+                            </label>
+                            <div class="bg-white form-control simplebox">1 BTC</div>
                         </div>
-                        <a class="text-muted text-sm" href="#">Generate new address</a>
                     </div>
-                    <div class="col-md-7">
-                        <form class="align-self-center mt-70 auth-form col-md-10">
-                            <div class="form-group">
-                                <label class="text-uppercase text-sm">Select Currency</label>
-                                <select class="form-control shadow-lite selectpicker br-0 bg-white text-md">
-                                    <option>BITCOIN</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1" class="text-sm">
-                                    <span class="text-uppercase">Available Balance</span>
-                                </label>
-                                <div class="bg-white p-10 shadow-lite">1 BTC</div>
-                            </div>
-                        </form>
+                    <div class="row m-0 mt-10">
+                        <div class="form-group col-md-6">
+                            <label class="text-uppercase text-sm">Recipient</label>
+                            <input type="text" class="form-control" placeholder="Enter bitcoin address">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="text-uppercase text-sm">Btc Amount</label>
+                            <input type="text" class="form-control" placeholder="Enter bitcoin amount">
+                        </div>
+
                     </div>
-                </div>
+                    <div class="row m-0 mt-15">
+                        <div class="form-group col-md-12">
+                            <button type="button" class="simplebox btn btn-custom-success text-uppercase">Submit</button>
+                        </div>
+                    </div>
+                </form>
+
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <script src="lib/jquery/dist/jquery.min.js"></script>
